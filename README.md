@@ -51,13 +51,11 @@ Este projeto foi desenvolvido com os seguintes propósitos:
 
 ## 📷 Print da Interface
 
-> *(Adicione uma imagem aqui assim que fizer o upload no GitHub)*
-
-```
-# Exemplo: ![Screenshot da aplicação](./screenshot.png)
+ ![](./public/images/Screenshot.png)
+ ```
 🛠️ Como rodar o projeto localmente
 1. Clone o repositório
-git clone https://github.com/seu-usuario/supermercado-online.git
+git clone  https://github.com/GleberC/supermercado.git
 cd supermercado-online
 2. Instale as dependências
 npm install
@@ -86,10 +84,10 @@ A aplicação estará disponível em: http://localhost:5173
 └── README.md
 🤝 Contribuindo
 Este projeto é uma base didática. Se quiser estudar, fazer melhorias ou usar como inspiração, sinta-se à vontade para fazer um fork!
+```
+🔗 Deploy 
 
-🔗 Deploy (opcional)
-(Adicione o link do Vercel ou Netlify aqui após o deploy)
-Exemplo: https://supermercado-online.vercel.app
+[[Supermercado Online]](https://supermercado-bice.vercel.app/)
 
 👤 Autor
 Gleber Cagnoni
