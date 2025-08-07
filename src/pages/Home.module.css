@@ -1,0 +1,126 @@
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: var(--fonte-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--cor-texto);
+}
+
+.inputNome {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius-base);
+  background-color: var(--cor-botao);
+  color: var(--cor-texto);
+}
+
+.filtrosPreco {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+}
+
+.inputPreco {
+  padding: 0.5rem;
+  flex: 1;
+  width: 100%;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius-base);
+  background-color: var(--cor-botao);
+  color: var(--cor-texto);
+}
+
+.infoFiltro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--cor-texto);
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: var(--radius-base);
+  background-color: var(--cor-fundo); /* tom claro para contraste */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.imagem {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 120px;
+  max-width: 100%;
+}
+
+.botaoLimpar {
+  padding: 0.5rem 1rem;
+  background-color: var(--cor-botao);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius-base);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: var(--cor-texto);
+}
+
+.botaoLimpar:hover {
+  background-color: var(--cor-primaria-hover);
+  color: var(--cor-texto-contraste);
+  border-color: var(--cor-primaria-hover);
+}
+
+/* Responsivo para tablets e desktops */
+@media (min-width: 600px) {
+  .filtrosPreco {
+    flex-direction: row;
+  }
+
+  .infoFiltro {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas fixas */
+    gap: 3rem;
+  }
+
+  .item {
+    margin-bottom: 0; /* gap já cuida disso */
+  }
+}
+
+@media (min-width: 900px) {
+  .lista {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  }
+}
+
