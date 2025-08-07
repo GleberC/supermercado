@@ -51,7 +51,7 @@ Este projeto foi desenvolvido com os seguintes propósitos:
 
 ## 📷 Print da Interface
 
-![Screenshot da aplicação](./public/images/screenshot.png)
+![Screenshot da aplicação](./public/images/Screenshot.png)
 
  ```
 🛠️ Como rodar o projeto localmente
